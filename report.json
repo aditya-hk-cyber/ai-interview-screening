@@ -1,0 +1,49 @@
+{
+  "generated_at": "2026-03-12T20:59:24.033133",
+  "video_url": "https://drive.google.com/drive/folders/1ZVNMIkdEJrbRTyusSL2aOjm-v7AmSy9S",
+  "evaluation": {
+    "communication_quality": {
+      "score": 5.0,
+      "justification": "The candidate's communication is mediocre. The vocabulary is repetitive (e.g., 'very, very', 'great, great'). The filler word rate is 3.57%, which is acceptable but not excellent. The speaking pace is 132.4 WPM, which is within the ideal range. The average speech confidence is 0.948, slightly below the excellent threshold.",
+      "evidence": [
+        "Hello. I am a diehard RCB fan. I've been waiting for eighteen years to win this great trophy for our very, very dear Virat Kohli.",
+        "I think I can be a great, great watch party host because I am so really witty and interesting, and I also bring about such amazing facts about so many things."
+      ]
+    },
+    "coherence": {
+      "score": 4.0,
+      "justification": "The response lacks a clear structure. The candidate jumps from being a fan to claiming they'd be a good watch party host without a logical connection. The ideas are not well-organized.",
+      "evidence": [
+        "Hello. I am a diehard RCB fan.",
+        "I think I can be a great, great watch party host because I am so really witty and interesting, and I also bring about such amazing facts about so many things."
+      ]
+    },
+    "sports_knowledge": {
+      "score": 3.0,
+      "justification": "The candidate demonstrates basic sports knowledge by mentioning RCB and Virat Kohli. However, there is no depth or ability to reason about sports scenarios. The response is primarily based on fandom rather than analytical insight.",
+      "evidence": [
+        "I am a diehard RCB fan.",
+        "I've been waiting for eighteen years to win this great trophy for our very, very dear Virat Kohli."
+      ]
+    },
+    "strengths": [
+      "Enthusiasm"
+    ],
+    "weaknesses": [
+      "Lack of analytical skills",
+      "Poor coherence",
+      "Repetitive vocabulary",
+      "Limited sports knowledge"
+    ],
+    "weighted_score": 3.9,
+    "recommendation": "No"
+  },
+  "transcript_stats": {
+    "duration": 25.38,
+    "word_count": 56,
+    "words_per_minute": 132.39,
+    "avg_confidence": 0.9482,
+    "filler_word_rate": 0.0357
+  },
+  "transcript": "Hello. I am a diehard RCB fan. I've been waiting for eighteen years to win this great trophy for our very, very dear Virat Kohli. I think I can be a great, great watch party host because I am so really witty and interesting, and I also bring about such amazing facts about so many things."
+}
