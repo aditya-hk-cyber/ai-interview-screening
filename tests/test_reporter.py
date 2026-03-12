@@ -158,7 +158,9 @@ class TestSaveReports:
     def test_save_reports_creates_files(self, sample_transcript_data, sample_evaluation_data):
         report = generate_json_report(sample_transcript_data, sample_evaluation_data)
         with tempfile.TemporaryDirectory() as tmpdir:
-            json_path, md_path = save_reports(report, tmpdir)
+            paths = save_reports(report, tmpdir)
+            json_path = paths["json_path"]
+            md_path = paths["md_path"]
 
             assert os.path.exists(json_path)
             assert os.path.exists(md_path)
@@ -177,6 +179,24 @@ class TestSaveReports:
         report = generate_json_report(sample_transcript_data, sample_evaluation_data)
         with tempfile.TemporaryDirectory() as tmpdir:
             nested = os.path.join(tmpdir, "sub", "dir")
-            json_path, md_path = save_reports(report, nested)
-            assert os.path.exists(json_path)
-            assert os.path.exists(md_path)
+            paths = save_reports(report, nested)
+            assert os.path.exists(paths["json_path"])
+            assert os.path.exists(paths["md_path"])
+
+    def test_save_reports_with_video_name(self, sample_transcript_data, sample_evaluation_data):
+        """Reports named after video when video_name provided."""
+        report = generate_json_report(sample_transcript_data, sample_evaluation_data)
+        with tempfile.TemporaryDirectory() as tmpdir:
+            paths = save_reports(report, tmpdir, video_name="interview_001.mp4")
+            assert Path(paths["json_path"]).name == "interview_001_report.json"
+            assert Path(paths["md_path"]).name == "interview_001_report.md"
+            assert Path(paths["json_path"]).exists()
+            assert Path(paths["md_path"]).exists()
+
+    def test_save_reports_default_name(self, sample_transcript_data, sample_evaluation_data):
+        """Falls back to report.json/.md when no video_name."""
+        report = generate_json_report(sample_transcript_data, sample_evaluation_data)
+        with tempfile.TemporaryDirectory() as tmpdir:
+            paths = save_reports(report, tmpdir)
+            assert Path(paths["json_path"]).name == "report.json"
+            assert Path(paths["md_path"]).name == "report.md"

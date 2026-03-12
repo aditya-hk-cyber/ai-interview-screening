@@ -95,7 +95,9 @@ class TestFullPipelineWithMocks:
             assert "Strong domain knowledge" in md
 
             # Step 3: Save reports
-            json_path, md_path = save_reports(report_data, tmpdir)
+            paths = save_reports(report_data, tmpdir)
+            json_path = paths["json_path"]
+            md_path = paths["md_path"]
 
             # Verify files exist
             assert os.path.isfile(json_path)

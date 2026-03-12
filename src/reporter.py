@@ -142,12 +142,26 @@ def generate_markdown_report(report_data: dict) -> str:
     return "\n".join(lines)
 
 
-def save_reports(report_data: dict, output_dir: str = "."):
-    """Save report.json and report.md to output_dir."""
-    os.makedirs(output_dir, exist_ok=True)
+def save_reports(report_data: dict, output_dir: str = ".", video_name: str = None) -> dict:
+    """Save report.json and report.md. If video_name given, uses it as filename prefix.
 
-    json_path = os.path.join(output_dir, "report.json")
-    md_path = os.path.join(output_dir, "report.md")
+    Returns {"json_path": str, "md_path": str}
+    """
+    from pathlib import Path
+
+    output_dir = Path(output_dir)
+    output_dir.mkdir(parents=True, exist_ok=True)
+
+    if video_name:
+        stem = Path(video_name).stem  # strip extension if present
+        json_filename = f"{stem}_report.json"
+        md_filename = f"{stem}_report.md"
+    else:
+        json_filename = "report.json"
+        md_filename = "report.md"
+
+    json_path = output_dir / json_filename
+    md_path = output_dir / md_filename
 
     with open(json_path, "w") as f:
         json.dump(report_data, f, indent=2)
@@ -156,4 +170,21 @@ def save_reports(report_data: dict, output_dir: str = "."):
     with open(md_path, "w") as f:
         f.write(md_content)
 
-    return json_path, md_path
+    return {"json_path": str(json_path), "md_path": str(md_path)}
+
+
+def upload_reports_to_drive(local_json_path: str, local_md_path: str, folder_id: str, credentials_file: str = "ds-dream11-0eb59d82137f.json") -> dict:
+    """Upload report files to a 'reports' subfolder in Drive. Returns {json_id, md_id, json_url, md_url}."""
+    from src.drive_utils import get_drive_service, get_or_create_subfolder, upload_file_to_drive
+    service = get_drive_service(credentials_file)
+    reports_folder_id = get_or_create_subfolder(service, folder_id, "reports")
+
+    json_id = upload_file_to_drive(service, local_json_path, reports_folder_id)
+    md_id = upload_file_to_drive(service, local_md_path, reports_folder_id)
+
+    return {
+        "json_id": json_id,
+        "md_id": md_id,
+        "json_url": f"https://drive.google.com/file/d/{json_id}/view",
+        "md_url": f"https://drive.google.com/file/d/{md_id}/view",
+    }

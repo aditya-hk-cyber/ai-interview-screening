@@ -247,6 +247,15 @@ def _parse_deepgram_response(data: dict) -> dict:
     }
 
 
+def download_video_by_id(service, file_id: str, filename: str, output_dir: str) -> str:
+    """Download a specific video file from Drive by file ID."""
+    output_path = Path(output_dir)
+    output_path.mkdir(parents=True, exist_ok=True)
+    dest = output_path / filename
+    _download_file_from_drive(service, file_id, dest)
+    return str(dest)
+
+
 def process_video(video_path_or_url: str) -> dict:
     """Full pipeline: download (if URL) or use local file, extract audio, transcribe.
 
