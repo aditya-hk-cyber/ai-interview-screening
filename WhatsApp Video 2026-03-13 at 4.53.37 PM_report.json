@@ -1,0 +1,54 @@
+{
+  "generated_at": "2026-03-13T23:50:35.500528",
+  "video_url": "https://drive.google.com/drive/folders/1ZVNMIkdEJrbRTyusSL2aOjm-v7AmSy9S",
+  "evaluation": {
+    "communication_quality": {
+      "score": 6.0,
+      "justification": "The candidate's vocabulary is limited, and the sentence structure is simple. The speech confidence is below the ideal threshold. The speaking pace is slightly above the ideal range, potentially impacting clarity.",
+      "evidence": [
+        "Hi guys. My name is Sharan and I'm a hardcore Mumbai Indians fan.",
+        "Look poochte moje, Mumbai mein issa kya hai Boss look at our cabinet",
+        "We have already won five trophies, its not a joke, its pure hard work and legacy"
+      ]
+    },
+    "coherence": {
+      "score": 5.0,
+      "justification": "The response lacks a clear structure. While the candidate expresses enthusiasm for Mumbai Indians, the points are somewhat disjointed and lack a logical flow. The transition between different aspects of the team feels abrupt.",
+      "evidence": [
+        "Wankadega woh atmosphere, Rohit kau pull shot, Bumragga woh yorkers, and Mumbai kau woh chant",
+        "Tee saja logik sad karna, Mumbai Mumbai Indians is not just a team, its one family.",
+        "I'm eagerly waiting to be a party host and cheer for Mumbai with all my diehard Mumbai Indians fan."
+      ]
+    },
+    "sports_knowledge": {
+      "score": 6.0,
+      "justification": "The candidate demonstrates basic knowledge of the Mumbai Indians, including their trophy count and key players like Rohit and Bumrah. However, the knowledge lacks depth and doesn't extend beyond readily available information. There's no evidence of analytical reasoning or understanding of broader sports trends.",
+      "evidence": [
+        "We have already won five trophies",
+        "Rohit kau pull shot, Bumragga woh yorkers",
+        "Lets get our sixth trophy."
+      ]
+    },
+    "strengths": [
+      "Enthusiasm for the team",
+      "Clear passion for IPL"
+    ],
+    "weaknesses": [
+      "Limited vocabulary",
+      "Poor sentence variety",
+      "Lacks depth of sports knowledge",
+      "Coherence issues",
+      "Below average speech confidence"
+    ],
+    "weighted_score": 5.7,
+    "recommendation": "Maybe"
+  },
+  "transcript_stats": {
+    "duration": 59.328,
+    "word_count": 125,
+    "words_per_minute": 126.42,
+    "avg_confidence": 0.828,
+    "filler_word_rate": 0.0
+  },
+  "transcript": "Hi guys. My name is Sharan and I'm a hardcore Mumbai Indians fan. When it comes to IPL, there is only one emotion. Aamchi Mumbai. Blue and Gold is not just a jersey, it's a vibe Look poochte moje, Mumbai mein issa kya hai Boss look at our cabinet We have already won five trophies, its not a joke, its pure hard work and legacy Wankadega woh atmosphere, Rohit kau pull shot, Bumragga woh yorkers, and Mumbai kau woh chant, Tee saja logik sad karna, Mumbai Mumbai Indians is not just a team, its one family. I'm eagerly waiting to be a party host and cheer for Mumbai with all my diehard Mumbai Indians fan. Lets go Mumbai. Lets get our sixth trophy. Mumbai. Mumbai."
+}
