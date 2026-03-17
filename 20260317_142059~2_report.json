@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-03-17T16:02:28.482848",
+  "generated_at": "2026-03-17T17:33:03.924483",
   "video_url": "https://drive.google.com/file/d/1az4yaMN1fssDE86litN4vh6vQptBBJwp/view?usp=drivesdk",
   "evaluation": {
     "communication_quality": {
       "score": 0.0,
-      "justification": "The candidate provided no speech, resulting in a score of 0.0 for communication quality. There is no vocabulary, sentence structure, or speaking pace to evaluate. The confidence level is also 0.0, indicating a complete lack of verbal communication.",
+      "justification": "The candidate provided no speech, resulting in a complete lack of communication. All metrics (vocabulary, filler words, clarity, pace) are therefore undefined and poor.",
       "evidence": []
     },
     "coherence": {
       "score": 0.0,
-      "justification": "Due to the absence of any speech, the candidate's response lacks any logical flow, structure, or topical relevance. Therefore, the coherence score is 0.0.",
+      "justification": "Due to the absence of any speech, there is no coherence to evaluate. The response has no logical flow, topic, or structure.",
       "evidence": []
     },
     "sports_knowledge": {
       "score": 0.0,
-      "justification": "Without any verbal response, it is impossible to assess the candidate's sports knowledge. The score is 0.0 due to the complete lack of information provided.",
+      "justification": "Without any speech from the candidate, it's impossible to assess their sports knowledge. There's no evidence of any understanding of rules, teams, players, stats, or trends.",
       "evidence": []
     },
     "strengths": [],
     "weaknesses": [
       "Lack of communication",
       "Absence of sports knowledge demonstration",
-      "Inability to form coherent responses"
+      "Poor coherence"
     ],
     "weighted_score": 0.0,
     "recommendation": "No"

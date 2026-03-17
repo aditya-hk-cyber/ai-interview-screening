@@ -1,0 +1,54 @@
+{
+  "generated_at": "2026-03-17T17:32:26.621956",
+  "video_url": "https://youtube.com/shorts/erf1dR1pMAs?si=RFe0zXMAS_FZuHy_",
+  "evaluation": {
+    "communication_quality": {
+      "score": 7.0,
+      "justification": "The candidate's speech confidence is excellent (0.965), and her speaking pace is within the ideal range (127.3 WPM). However, the filler word rate is slightly high at 3.51%, which detracts slightly from the overall communication quality. The vocabulary and sentence structure are adequate but not particularly rich or varied.",
+      "evidence": [
+        "My name is Amrita, and I am from Perth, Australia.",
+        "I will be a great host because I currently run a YouTube channel.",
+        "uh",
+        "um"
+      ]
+    },
+    "coherence": {
+      "score": 8.0,
+      "justification": "The response is generally coherent and stays on topic. The candidate provides a clear introduction, explains her background and interest in cricket, and concludes by stating why she would be a good host. The structure is logical and easy to follow.",
+      "evidence": [
+        "Hi. My name is Amrita, and I am from Perth, Australia.",
+        "I'm a cricket enthusiast, and I run a YouTube channel which is called Desi Covers Cricket.",
+        "basically, I will be a great host because I currently run a YouTube channel."
+      ]
+    },
+    "sports_knowledge": {
+      "score": 6.0,
+      "justification": "The candidate demonstrates a basic understanding of cricket by mentioning her YouTube channel dedicated to match analysis and highlights. She also expresses her affinity for the Indian and Australian cricket teams. However, the response lacks depth in terms of specific knowledge about rules, players, stats, or trends. The sports knowledge is present but not extensive.",
+      "evidence": [
+        "I'm a cricket enthusiast, and I run a YouTube channel which is called Desi Covers Cricket.",
+        "I give match analysis and, uh, match highlights, um, whenever I can.",
+        "My favorite team is, number one, India as I was born there, and number two is Australia since I live here."
+      ]
+    },
+    "strengths": [
+      "Comfortable on camera",
+      "Runs a cricket-related YouTube channel",
+      "Enthusiastic about cricket"
+    ],
+    "weaknesses": [
+      "Lacks depth in sports knowledge",
+      "Filler words",
+      "Basic vocabulary"
+    ],
+    "weighted_score": 6.9,
+    "recommendation": "Yes"
+  },
+  "transcript_stats": {
+    "duration": 53.712,
+    "word_count": 114,
+    "words_per_minute": 127.35,
+    "avg_confidence": 0.9651,
+    "filler_word_rate": 0.0351
+  },
+  "transcript": "Hi. My name is Amrita, and I am from Perth, Australia. I'm a cricket enthusiast, and I run a YouTube channel which is called Desi Covers Cricket. And I give match analysis and, uh, match highlights, um, whenever I can. I do post, um, on a weekly basis on that YouTube channel. My favorite team is, number one, India as I was born there, and number two is Australia since I live here. So they're both tied. And, basically, I will be a great host because I currently run a YouTube channel. I know a lot about cricket. I am comfortable talking on the camera, and, yeah, I'll be a great host. Thank you."
+}

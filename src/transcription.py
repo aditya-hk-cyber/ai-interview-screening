@@ -248,6 +248,37 @@ def download_video_by_id(service, file_id: str, filename: str, output_dir: str) 
     return str(dest)
 
 
+def download_youtube_audio(url: str, output_dir: str) -> tuple[str, str]:
+    """Download audio from a YouTube URL using yt-dlp.
+
+    Returns (audio_path, video_title).
+    Raises on download failure (private video, invalid URL, network error).
+    """
+    import yt_dlp
+
+    output_dir = Path(output_dir)
+    output_template = str(output_dir / "yt_audio.%(ext)s")
+
+    ydl_opts = {
+        "format": "bestaudio/best",
+        "postprocessors": [{
+            "key": "FFmpegExtractAudio",
+            "preferredcodec": "mp3",
+            "preferredquality": "128",
+        }],
+        "outtmpl": output_template,
+        "quiet": True,
+        "no_warnings": True,
+    }
+
+    with yt_dlp.YoutubeDL(ydl_opts) as ydl:
+        info = ydl.extract_info(url, download=True)
+        title = info.get("title", "youtube_video")
+
+    audio_path = str(output_dir / "yt_audio.mp3")
+    return audio_path, title
+
+
 def process_video(video_path_or_url: str) -> dict:
     """Full pipeline: download (if URL) or use local file, extract audio, transcribe.
 

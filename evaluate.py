@@ -15,6 +15,7 @@ from src.transcription import (
     process_video,
     load_api_key,
     download_video_by_id,
+    download_youtube_audio,
     extract_audio,
     transcribe_audio,
 )
@@ -110,9 +111,45 @@ def _process_spreadsheet(url: str, output_dir: str, no_upload: bool):
         url_type = classify_url(video_url)
 
         if url_type == "youtube":
-            write_cell(sheets_service, spreadsheet_id, sheet_name, row_num, "Z", "youtube links not accessible")
-            console.print("  [yellow]YouTube URL — skipped[/yellow]")
-            results.append((row_num, "youtube links not accessible"))
+            try:
+                with tempfile.TemporaryDirectory() as tmp_dir:
+                    with Progress(
+                        SpinnerColumn(),
+                        TextColumn("[progress.description]{task.description}"),
+                        console=console,
+                    ) as progress:
+                        task = progress.add_task("Downloading YouTube audio...", total=None)
+                        audio_path, video_name = download_youtube_audio(video_url, tmp_dir)
+                        progress.update(task, description="[green]Downloaded!")
+
+                        progress.update(task, description="Transcribing...")
+                        transcript_data = transcribe_audio(audio_path)
+                        progress.update(task, description="[green]Transcription complete!")
+
+                        word_count = transcript_data.get("metadata", {}).get("word_count", 0)
+                        if word_count < 10:
+                            console.print(f"  [yellow]Warning: only {word_count} words transcribed[/yellow]")
+
+                        progress.update(task, description="Evaluating with Gemini AI...")
+                        evaluator_input = prepare_evaluator_input(transcript_data)
+                        evaluation_data = evaluate_candidate(evaluator_input)
+                        progress.update(task, description="[green]Evaluation complete!")
+
+                        progress.update(task, description="Generating reports...")
+                        report_data = generate_json_report(transcript_data, evaluation_data, video_url=video_url)
+                        paths = save_reports(report_data, output_dir, video_name=video_name)
+                        progress.update(task, description="[green]Reports generated!")
+
+                weighted_score = evaluation_data.get("weighted_score", 0)
+                score_str = f"{weighted_score:.2f}"
+                write_cell(sheets_service, spreadsheet_id, sheet_name, row_num, "Z", score_str)
+                console.print(f"  Score: [bold green]{score_str}[/bold green]  → {evaluation_data.get('recommendation', '')}")
+                results.append((row_num, score_str))
+
+            except Exception as e:
+                write_cell(sheets_service, spreadsheet_id, sheet_name, row_num, "Z", "access not found")
+                console.print(f"  [red]Error: {e}[/red]")
+                results.append((row_num, "access not found"))
             continue
 
         if url_type == "unknown":

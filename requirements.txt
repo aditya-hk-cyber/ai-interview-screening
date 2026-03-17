@@ -1,5 +1,6 @@
 gdown>=5.2.0
 google-api-python-client>=2.100.0
+yt-dlp>=2024.1.0
 deepgram-sdk>=3.7.0
 google-generativeai>=0.8.0
 google-cloud-aiplatform>=1.60.0
