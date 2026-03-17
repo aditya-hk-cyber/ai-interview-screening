@@ -1,0 +1,51 @@
+{
+  "generated_at": "2026-03-17T16:02:11.500324",
+  "video_url": "https://drive.google.com/file/d/1e2dZ2aAPjVFWrM1AiFBE16w0W8wmNO5Z/view?usp=drivesdk",
+  "evaluation": {
+    "communication_quality": {
+      "score": 5.0,
+      "justification": "The candidate's communication is weak. The filler word rate is high at 6.97%, and the speaking pace is slightly fast at 170 WPM. The average speech confidence is acceptable at 0.905, but the frequent use of \"uh\" and \"um\" detracts from overall clarity. Vocabulary is basic and sentence structure is repetitive.",
+      "evidence": [
+        "Hello, guys.",
+        "Means, I can it depends how can I engage the have the crowd miss? I can it depends on the situation means on the situation.",
+        "Uh, so no one is left out, uh, replying to their messages and their their queries, replying to their questions."
+      ]
+    },
+    "coherence": {
+      "score": 4.0,
+      "justification": "The response lacks a clear structure and logical flow. The candidate jumps between topics without clear transitions, making it difficult to follow their reasoning. The response feels more like a stream of consciousness than a well-organized answer.",
+      "evidence": [
+        "I'm following cricket since ninety nine World Cup, and I've got most of the 70% of the game, uh, since 1999 of cricket.",
+        "Let me see, miss, uh, how can why I'm perfect on because, um, I can bring my cricket knowledge since I am, uh, watching cricket since nineteen ninety nine World Cup."
+      ]
+    },
+    "sports_knowledge": {
+      "score": 6.0,
+      "justification": "The candidate demonstrates a basic understanding of cricket, mentioning the 1999 World Cup and an ability to make predictions. However, the depth of knowledge is limited. There's no discussion of specific players, strategies, or statistical analysis, which would indicate a more profound understanding of the sport.",
+      "evidence": [
+        "I'm following cricket since ninety nine World Cup",
+        "I can use the predictions, like, whether it will be, uh, fifteen hours, uh, hour or in the weekend coming in the next hour."
+      ]
+    },
+    "strengths": [
+      "Passion for cricket",
+      "Willingness to engage with participants"
+    ],
+    "weaknesses": [
+      "Poor communication skills",
+      "Lack of coherence",
+      "Limited depth of sports knowledge",
+      "Excessive use of filler words"
+    ],
+    "weighted_score": 5.1,
+    "recommendation": "Maybe"
+  },
+  "transcript_stats": {
+    "duration": 70.956,
+    "word_count": 201,
+    "words_per_minute": 169.96,
+    "avg_confidence": 0.9052,
+    "filler_word_rate": 0.0697
+  },
+  "transcript": "Hello, guys. My name is Faridush Tiwari, and I'm from Indore. My favorite international team is Australia, and my favorite IPL team is Mujahide Titans. I'm following cricket since ninety nine World Cup, and I've got most of the 70% of the game, uh, since 1999 of cricket. Means, I can it depends how can I engage the have the crowd miss? I can it depends on the situation means on the situation. I can use my cricket knowledge, my cricket phrases. Uh, I will use the cricket strategy. I can use the predictions, like, whether it will be, uh, fifteen hours, uh, hour or in the weekend coming in the next hour. Let me see, miss, uh, how can why I'm perfect on because, um, I can bring my cricket knowledge since I am, uh, watching cricket since nineteen ninety nine World Cup. So I know all the cricket basics and everything, uh, which is required to be a great horse interacting with each and individual uh, participant. Uh, so no one is left out, uh, replying to their messages and their their queries, replying to their questions. This is all I can bring into the watch party. Thank you."
+}

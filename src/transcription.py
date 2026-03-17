@@ -8,8 +8,11 @@ import gdown
 import requests
 from google.oauth2 import service_account
 from googleapiclient.discovery import build
+from googleapiclient.errors import HttpError
 from googleapiclient.http import MediaIoBaseDownload
 import io
+
+from src.url_utils import extract_drive_id
 
 DEEPGRAM_API_KEY = None  # loaded from file at runtime
 
@@ -36,17 +39,6 @@ def _get_drive_service(credentials_file: str = "ds-dream11-0eb59d82137f.json"):
     )
     return build("drive", "v3", credentials=creds)
 
-
-def _extract_folder_id(drive_url: str) -> str:
-    """Extract folder/file ID from a Google Drive URL."""
-    # Handle formats like /folders/<id> or /file/d/<id> or ?id=<id>
-    if "/folders/" in drive_url:
-        return drive_url.split("/folders/")[1].split("?")[0].split("/")[0]
-    elif "/file/d/" in drive_url:
-        return drive_url.split("/file/d/")[1].split("/")[0].split("?")[0]
-    elif "id=" in drive_url:
-        return drive_url.split("id=")[1].split("&")[0]
-    raise ValueError(f"Cannot extract ID from URL: {drive_url}")
 
 
 def _download_file_from_drive(service, file_id: str, dest_path: Path) -> str:
@@ -78,7 +70,7 @@ def download_video(drive_url: str, output_dir: str = ".") -> list[str]:
     try:
         service = _get_drive_service()
         if "folders" in drive_url:
-            folder_id = _extract_folder_id(drive_url)
+            folder_id = extract_drive_id(drive_url)
             query = f"'{folder_id}' in parents and trashed=false"
             results = service.files().list(
                 q=query,
@@ -103,7 +95,7 @@ def download_video(drive_url: str, output_dir: str = ".") -> list[str]:
                 downloaded.append(str(dest))
             return downloaded
         else:
-            file_id = _extract_folder_id(drive_url)
+            file_id = extract_drive_id(drive_url)
             meta = service.files().get(fileId=file_id, fields="name").execute()
             dest = output_dir / meta["name"]
             _download_file_from_drive(service, file_id, dest)

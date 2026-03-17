@@ -30,5 +30,8 @@ env/
 .DS_Store
 Thumbs.db
 
+# Logs
+logs/
+
 # Claude
 .claude/

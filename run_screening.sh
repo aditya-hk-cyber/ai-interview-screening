@@ -4,7 +4,7 @@ PROJECT_DIR="/Users/adityakumaraswamy/Downloads/AI interviewer Screening"
 PYTHON="/Users/adityakumaraswamy/.pyenv/versions/3.12.5/bin/python"
 LOG_DIR="$PROJECT_DIR/logs"
 LOG_FILE="$LOG_DIR/screening.log"
-DRIVE_URL="https://drive.google.com/drive/folders/1ZVNMIkdEJrbRTyusSL2aOjm-v7AmSy9S"
+DRIVE_URL="https://docs.google.com/spreadsheets/d/1XtQw_lTdfqsv7XKrQOTQch4k1rCt7sT1AdlHKDwx5Hg/edit?gid=1066151357#gid=1066151357"
 
 mkdir -p "$LOG_DIR"
 

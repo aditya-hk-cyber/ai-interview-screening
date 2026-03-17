@@ -17,7 +17,14 @@ from src.transcription import (
     download_video_by_id,
     extract_audio,
     transcribe_audio,
-    _extract_folder_id,
+)
+from src.url_utils import classify_url, extract_drive_id
+from src.sheets_utils import (
+    get_sheets_service,
+    parse_spreadsheet_url,
+    resolve_sheet_name,
+    read_column,
+    write_cell,
 )
 from src.evaluator import evaluate_candidate
 from src.reporter import (
@@ -67,9 +74,149 @@ def _print_evaluation_summary(tracking_data: dict):
         console.print(f"  [dim]{date}[/dim]  {name:<40} Score: [bold]{score}[/bold]  → {rec}")
 
 
+def _process_spreadsheet(url: str, output_dir: str, no_upload: bool):
+    """Process a Google Sheets URL as intake source.
+
+    Reads video links from column Y, writes scores/errors to column Z.
+    Skips rows where Z is already filled (idempotent).
+    """
+    sheets_service = get_sheets_service()
+    spreadsheet_id, gid = parse_spreadsheet_url(url)
+    sheet_name = resolve_sheet_name(sheets_service, spreadsheet_id, gid)
+
+    console.print(f"[cyan]Sheet: {sheet_name}[/cyan]")
+
+    y_rows = read_column(sheets_service, spreadsheet_id, sheet_name, "Y")
+    z_rows = read_column(sheets_service, spreadsheet_id, sheet_name, "Z")
+
+    z_filled = {r["row"] for r in z_rows if r["value"]}
+    pending = [r for r in y_rows if r["value"] and r["row"] not in z_filled]
+
+    if not pending:
+        console.print("[green]No pending rows to process.[/green]")
+        return
+
+    console.print(f"[cyan]Found {len(pending)} pending row(s)[/cyan]")
+
+    drive_service = get_drive_service()
+    results = []
+
+    for row_info in pending:
+        row_num = row_info["row"]
+        video_url = row_info["value"].strip()
+        display_url = video_url[:70] + "..." if len(video_url) > 70 else video_url
+        console.print(f"\n[bold]Row {row_num}:[/bold] {display_url}")
+
+        url_type = classify_url(video_url)
+
+        if url_type == "youtube":
+            write_cell(sheets_service, spreadsheet_id, sheet_name, row_num, "Z", "youtube links not accessible")
+            console.print("  [yellow]YouTube URL — skipped[/yellow]")
+            results.append((row_num, "youtube links not accessible"))
+            continue
+
+        if url_type == "unknown":
+            write_cell(sheets_service, spreadsheet_id, sheet_name, row_num, "Z", "access not found")
+            console.print("  [yellow]Unknown URL type — skipped[/yellow]")
+            results.append((row_num, "access not found"))
+            continue
+
+        # drive_file or drive_folder
+        try:
+            file_id = extract_drive_id(video_url)
+        except ValueError:
+            write_cell(sheets_service, spreadsheet_id, sheet_name, row_num, "Z", "access not found")
+            results.append((row_num, "access not found"))
+            continue
+
+        if url_type == "drive_folder":
+            try:
+                videos = get_unevaluated_videos(drive_service, file_id, {})
+            except Exception:
+                write_cell(sheets_service, spreadsheet_id, sheet_name, row_num, "Z", "access not found")
+                console.print("  [red]Folder inaccessible[/red]")
+                results.append((row_num, "access not found"))
+                continue
+
+            if not videos:
+                write_cell(sheets_service, spreadsheet_id, sheet_name, row_num, "Z", "access not found")
+                console.print("  [yellow]No videos found in folder[/yellow]")
+                results.append((row_num, "access not found"))
+                continue
+
+            video_info = videos[0]
+            dl_file_id = video_info["id"]
+            video_name = video_info["name"]
+        else:
+            # drive_file — fetch metadata to get filename
+            try:
+                meta = drive_service.files().get(fileId=file_id, fields="name").execute()
+                video_name = meta["name"]
+                dl_file_id = file_id
+            except Exception:
+                write_cell(sheets_service, spreadsheet_id, sheet_name, row_num, "Z", "access not found")
+                console.print("  [red]File inaccessible[/red]")
+                results.append((row_num, "access not found"))
+                continue
+
+        # Download, transcribe, evaluate
+        try:
+            with tempfile.TemporaryDirectory() as tmp_dir:
+                with Progress(
+                    SpinnerColumn(),
+                    TextColumn("[progress.description]{task.description}"),
+                    console=console,
+                ) as progress:
+                    task = progress.add_task(f"Downloading {video_name}...", total=None)
+                    video_path = download_video_by_id(drive_service, dl_file_id, video_name, tmp_dir)
+                    progress.update(task, description="[green]Downloaded!")
+
+                    progress.update(task, description="Extracting audio and transcribing...")
+                    audio_path = extract_audio(video_path, output_dir=tmp_dir)
+                    transcript_data = transcribe_audio(audio_path)
+                    progress.update(task, description="[green]Transcription complete!")
+
+                    word_count = transcript_data.get("metadata", {}).get("word_count", 0)
+                    if word_count < 10:
+                        console.print(f"  [yellow]Warning: only {word_count} words transcribed[/yellow]")
+
+                    progress.update(task, description="Evaluating with Gemini AI...")
+                    evaluator_input = prepare_evaluator_input(transcript_data)
+                    evaluation_data = evaluate_candidate(evaluator_input)
+                    progress.update(task, description="[green]Evaluation complete!")
+
+                    progress.update(task, description="Generating reports...")
+                    report_data = generate_json_report(transcript_data, evaluation_data, video_url=video_url)
+                    paths = save_reports(report_data, output_dir, video_name=video_name)
+                    progress.update(task, description="[green]Reports generated!")
+
+                    if not no_upload:
+                        progress.update(task, description="Uploading reports to Drive...")
+                        try:
+                            upload_reports_to_drive(paths["json_path"], paths["md_path"], dl_file_id)
+                        except Exception:
+                            pass
+
+            weighted_score = evaluation_data.get("weighted_score", 0)
+            score_str = f"{weighted_score:.2f}"
+            write_cell(sheets_service, spreadsheet_id, sheet_name, row_num, "Z", score_str)
+            console.print(f"  Score: [bold green]{score_str}[/bold green]  → {evaluation_data.get('recommendation', '')}")
+            results.append((row_num, score_str))
+
+        except Exception as e:
+            write_cell(sheets_service, spreadsheet_id, sheet_name, row_num, "Z", "access not found")
+            console.print(f"  [red]Error: {e}[/red]")
+            results.append((row_num, "access not found"))
+
+    console.print("\n[bold green]Spreadsheet processing complete![/bold green]")
+    console.print(f"Processed {len(results)} row(s):")
+    for row_num, result in results:
+        console.print(f"  Row {row_num}: {result}")
+
+
 def _process_folder_url(video_url: str, output_dir: str, no_upload: bool):
     """Process a Google Drive folder URL with incremental tracking."""
-    folder_id = _extract_folder_id(video_url)
+    folder_id = extract_drive_id(video_url)
     service = get_drive_service()
 
     # Load tracking data from Drive
@@ -258,7 +405,7 @@ def _process_single_video(video_url, video_path, output_dir, no_upload):
         if video_url and not no_upload:
             progress.update(task, description="Uploading reports to Google Drive...")
             try:
-                folder_id = _extract_folder_id(video_url)
+                folder_id = extract_drive_id(video_url)
                 drive_urls = upload_reports_to_drive(json_path, md_path, folder_id)
                 progress.update(
                     task, description="[green]Reports uploaded to Drive!"
@@ -306,8 +453,9 @@ def main(video_url, video_path, output_dir, no_upload):
         sys.exit(1)
 
     try:
-        # Folder URL -> incremental processing with tracking
-        if video_url and "/folders/" in video_url:
+        if video_url and "/spreadsheets/" in video_url:
+            _process_spreadsheet(video_url, output_dir, no_upload)
+        elif video_url and "/folders/" in video_url:
             _process_folder_url(video_url, output_dir, no_upload)
         else:
             _process_single_video(video_url, video_path, output_dir, no_upload)

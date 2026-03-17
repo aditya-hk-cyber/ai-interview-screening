@@ -1,6 +1,7 @@
 import json
 from pathlib import Path
 from googleapiclient.discovery import build
+from googleapiclient.errors import HttpError
 from googleapiclient.http import MediaFileUpload, MediaIoBaseDownload
 from google.oauth2 import service_account
 import io
@@ -96,7 +97,10 @@ def save_tracking_file(_service, tracking_data: dict, _folder_id: str):
     LOCAL_TRACKING_FILE.write_text(json.dumps(tracking_data, indent=2))
 
 def get_unevaluated_videos(service, folder_id: str, tracking_data: dict) -> list:
-    """Return list of {id, name} dicts for videos not yet evaluated."""
+    """Return list of {id, name} dicts for videos not yet evaluated.
+
+    Raises HttpError if the folder is inaccessible (403/404).
+    """
     VIDEO_EXTENSIONS = {".mp4", ".mov", ".avi", ".mkv", ".webm", ".mpeg", ".mpg"}
     VIDEO_MIMES = {"video/mp4", "video/quicktime", "video/x-msvideo", "video/x-matroska", "video/webm", "video/mpeg"}
 

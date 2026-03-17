@@ -1,0 +1,51 @@
+{
+  "generated_at": "2026-03-17T16:01:50.388779",
+  "video_url": "https://drive.google.com/file/d/1csy6t5u1y4_xzZbSlc2aTw10Z43KS2CG/view?usp=sharing",
+  "evaluation": {
+    "communication_quality": {
+      "score": 6.0,
+      "justification": "The candidate's communication is adequate but not exceptional. The vocabulary is simple, and sentence variety is limited. The filler word rate is 5.33%, which is on the higher side. The average speech confidence is 0.896, which is below the excellent threshold. The speaking pace of 143.8 WPM is within the ideal range.",
+      "evidence": [
+        "Hey. This is Satin. I follow a sport. I like cricket and football.",
+        "Uh, in cricket, I really like Mumbai Indians in IPL.",
+        "And in football, I follow Arsenal."
+      ]
+    },
+    "coherence": {
+      "score": 7.0,
+      "justification": "The response has a basic structure, introducing the sports and teams followed. The candidate stays on topic, discussing memories related to each team. However, the flow could be improved with more transitions and a clearer organization of thoughts.",
+      "evidence": [
+        "And it's been really great watching both this team all the all the years and in football why I really like Arsenal they said a playing style as well as the aggression",
+        "I felt that we dominated that game maybe later part and in Mumbai Indians uh I think in last season we had a fair share of good game I felt, uh, match against k care at one kid was really good."
+      ]
+    },
+    "sports_knowledge": {
+      "score": 6.0,
+      "justification": "The candidate demonstrates basic knowledge of cricket (IPL, Mumbai Indians) and football (Arsenal, EPL). The depth of knowledge is limited to mentioning team names, leagues, and a few specific match memories. There's no evidence of deeper understanding of rules, player stats, or strategic trends.",
+      "evidence": [
+        "Mumbai Indians winning 2020 IPL. It was really great journey in that season",
+        "arsenal winning against Everton two zero and I felt that we dominated that game maybe later part"
+      ]
+    },
+    "strengths": [
+      "Identifies specific teams and leagues.",
+      "Shares personal memories related to the teams."
+    ],
+    "weaknesses": [
+      "Limited vocabulary and sentence variety.",
+      "High filler word frequency.",
+      "Lacks in-depth sports knowledge.",
+      "Coherence could be improved."
+    ],
+    "weighted_score": 6.3,
+    "recommendation": "Maybe"
+  },
+  "transcript_stats": {
+    "duration": 62.604,
+    "word_count": 150,
+    "words_per_minute": 143.76,
+    "avg_confidence": 0.8957,
+    "filler_word_rate": 0.0533
+  },
+  "transcript": "Hey. This is Satin. I follow a sport. I like cricket and football. Uh, in cricket, I really like Mumbai Indians in IPL. And in football, I follow Arsenal. And it's been really great watching both this team all the all the years and in football why I really like Arsenal they said a playing style as well as the aggression uh I would say the best memory for me was winning 2002 2003 EPL and regarding, uh, Mumbai Indians Mumbai Indians winning 2020 IPL. It was really great journey in that season and recent memory arsenal winning against Everton two zero and I felt that we dominated that game maybe later part and in Mumbai Indians uh I think in last season we had a fair share of good game I felt, uh, match against k care at one kid was really good. We dominated that game. Thank you."
+}
