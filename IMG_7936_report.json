@@ -1,0 +1,37 @@
+{
+  "generated_at": "2026-03-17T19:45:16.127347",
+  "video_url": "https://drive.google.com/drive/folders/1cK8pvHZv5EJLzsUYAQehFTKCO6jEd4G-?usp=sharing",
+  "evaluation": {
+    "communication_quality": {
+      "score": 0.0,
+      "justification": "The candidate provided no verbal response. The word count is 0, the duration is 6.3 seconds, and the average speech confidence is 0.0. This indicates a complete lack of communication.",
+      "evidence": []
+    },
+    "coherence": {
+      "score": 0.0,
+      "justification": "Due to the absence of any verbal response, there is no coherence to evaluate. The candidate did not present any ideas or structure them in any way.",
+      "evidence": []
+    },
+    "sports_knowledge": {
+      "score": 0.0,
+      "justification": "Without any verbal response, it's impossible to assess the candidate's sports knowledge. There is no evidence of any understanding of sports rules, teams, players, stats, or trends.",
+      "evidence": []
+    },
+    "strengths": [],
+    "weaknesses": [
+      "Lack of communication",
+      "Absence of sports knowledge demonstration",
+      "Poor coherence"
+    ],
+    "weighted_score": 0.0,
+    "recommendation": "No"
+  },
+  "transcript_stats": {
+    "duration": 6.336,
+    "word_count": 0,
+    "words_per_minute": 0.0,
+    "avg_confidence": 0.0,
+    "filler_word_rate": 0.0
+  },
+  "transcript": ""
+}

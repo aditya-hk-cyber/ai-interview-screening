@@ -156,6 +156,7 @@ def transcribe_audio(audio_path: str) -> dict:
         "utterances": "true",
         "punctuate": "true",
         "filler_words": "true",
+        "detect_language": "true",
     }
     headers = {
         "Authorization": f"Token {DEEPGRAM_API_KEY}",
