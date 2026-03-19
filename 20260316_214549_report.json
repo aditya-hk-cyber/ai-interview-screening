@@ -1,0 +1,53 @@
+{
+  "generated_at": "2026-03-18T15:00:55.805309",
+  "video_url": "https://drive.google.com/file/d/15lu6ahtCF_s8j0HfAyhE1nf2ILZf6xLh/view?usp=drivesdk",
+  "evaluation": {
+    "communication_quality": {
+      "score": 6.0,
+      "justification": "The candidate's communication is somewhat unclear. While the average speech confidence is relatively high (0.931), the speaking pace is quite fast (202.9 WPM), which can make it difficult to follow. The filler word rate is acceptable (0.78%), but the vocabulary is not particularly rich, and the sentence structure is simple. The use of Hindi phrases may also limit understanding for some listeners.",
+      "evidence": [
+        "Hello guys \u0905\u0915\u094d\u0937\u092f \u091c\u093e\u0928 this side.",
+        "\u092e\u0948\u0902 \u0915\u094d\u092f\u093e better \u0915\u0930 \u0938\u0915\u0924\u093e \u0939\u0942\u0901 \u0907\u0938\u0915\u0947?",
+        "So Punjab kings \u091c\u0940\u0924\u0947\u0917\u0940 \u0914\u0930 \u0939\u092e \u0926\u094b \u0939\u095b\u093e\u0930 \u091b\u092c\u094d\u092c\u0940\u0938 \u092e\u0947\u0902 cup \u0909\u0920\u093e \u0930\u0939\u0947 \u0939\u0948."
+      ]
+    },
+    "coherence": {
+      "score": 5.0,
+      "justification": "The response lacks a clear structure. The candidate jumps between expressing fandom, suggesting interaction ideas, and predicting future wins. There isn't a logical flow or a clear beginning, middle, and end. The ideas are somewhat disjointed.",
+      "evidence": [
+        "\u092e\u0948\u0902 Punjab kings fan \u0915\u0947 \u0938\u093e\u0925 interact \u0915\u0930 \u0939\u0942\u0902. \u092e\u0948\u0902 Igel fans \u0915\u0947 \u0938\u093e\u0925 interact \u0915\u0930 \u0938\u0915\u0924\u093e \u0939\u0942\u0902. \u0909\u0928\u094d\u0939\u0947\u0902 Igel matches \u0915\u0947 \u0926\u094c\u0930\u093e\u0928 task \u0926\u0947 \u0938\u0915\u0924\u093e \u0939\u0942\u0902.",
+        "\u0906 \u0917\u0908 \u0926\u0938, \u0906 \u0917\u0908 last ball \u092a\u0930 \u091a\u093e\u0939\u093f\u090f \u091b\u0947\u0930\u0928. \u0924\u094b \u0906\u092a \u0915\u0948\u0938\u0947 interact \u0915\u0930\u094b\u0917\u0947?",
+        "So Punjab kings \u091c\u0940\u0924\u0947\u0917\u0940 \u0914\u0930 \u0939\u092e \u0926\u094b \u0939\u095b\u093e\u0930 \u091b\u092c\u094d\u092c\u0940\u0938 \u092e\u0947\u0902 cup \u0909\u0920\u093e \u0930\u0939\u0947 \u0939\u0948."
+      ]
+    },
+    "sports_knowledge": {
+      "score": 7.0,
+      "justification": "The candidate demonstrates knowledge of cricket, specifically regarding match scenarios (final overs, super overs) and fan engagement strategies. They mention specific teams (Punjab Kings, MI, SRH) and the concept of supporting a team. However, the depth of knowledge is limited to basic concepts and doesn't delve into advanced analytics or strategic insights.",
+      "evidence": [
+        "\u092e\u0948\u0902 die hard cricket fan and a Punjab kings fan.",
+        "Super overs \u0906\u0910\u0902\u0917\u0947, final overs \u0906\u0910\u0902\u0917\u0947.",
+        "MI \u0915\u094b support \u0915\u0930\u094b \u0924\u094b, MI \u0915\u0947 \u0938\u093e\u0925 react \u0915\u0930\u094b, SRH \u0915\u094b support \u0915\u0930\u094b, SRH \u0915\u0947 sticker \u0915\u0947 \u0938\u093e\u0925 react \u0915\u0930\u094b"
+      ]
+    },
+    "strengths": [
+      "Enthusiasm for cricket",
+      "Ideas for fan engagement"
+    ],
+    "weaknesses": [
+      "Rapid speaking pace",
+      "Lack of clear structure",
+      "Limited vocabulary",
+      "Superficial sports knowledge"
+    ],
+    "weighted_score": 6.1,
+    "recommendation": "Maybe"
+  },
+  "transcript_stats": {
+    "duration": 76.284,
+    "word_count": 258,
+    "words_per_minute": 202.93,
+    "avg_confidence": 0.9314,
+    "filler_word_rate": 0.0078
+  },
+  "transcript": "Hello guys \u0905\u0915\u094d\u0937\u092f \u091c\u093e\u0928 this side. I am die hard cricket fan and a Punjab kings fan. I am also a cricket analyst. So, \u092e\u0948\u0902 \u0915\u094d\u092f\u093e better \u0915\u0930 \u0938\u0915\u0924\u093e \u0939\u0942\u0901 \u0907\u0938\u0915\u0947? \u092e\u0948\u0902 Punjab kings fan \u0915\u0947 \u0938\u093e\u0925 interact \u0915\u0930 \u0939\u0942\u0902. \u092e\u0948\u0902 Igel fans \u0915\u0947 \u0938\u093e\u0925 interact \u0915\u0930 \u0938\u0915\u0924\u093e \u0939\u0942\u0902. \u0909\u0928\u094d\u0939\u0947\u0902 Igel matches \u0915\u0947 \u0926\u094c\u0930\u093e\u0928 task \u0926\u0947 \u0938\u0915\u0924\u093e \u0939\u0942\u0902. \u091c\u094b \u0909\u0928\u094d\u0939\u0947\u0902 \u092c\u0939\u0941\u0924 interesting \u0932\u0917\u0947\u0917\u093e match \u0915\u0947 \u0926\u094c\u0930\u093e\u0928 \u0914\u0930 \u092c\u095c\u0947 matches \u0906\u0910\u0902\u0917\u0947. Super overs \u0906\u0910\u0902\u0917\u0947, final overs \u0906\u0910\u0902\u0917\u0947. \u0924\u094b \u0909\u0928\u094d\u0939\u0947\u0902 interest \u0932\u0917\u093e\u0928\u0947 \u0915\u0947 \u0932\u093f\u090f \u0905\u0932\u0917 \u0905\u0932\u0917 activities \u0915\u0930 \u0938\u0915\u0924\u0947 \u0939\u0948\u0902 \u0905\u092a\u0928\u0947. \u0939\u093e\u0902, final over \u091a\u0932 \u0930\u0939\u0940 \u0939\u0948, excitement \u0939\u0948. \u0924\u094b \u092f\u0939 \u0930\u0939\u0940 \u0907\u0938 ball \u092a\u0930 \u091a\u093e\u0939\u093f\u090f \u091b\u0947\u0930\u0928. \u0907\u0938\u092e\u0947\u0902 \u0939\u092e \u0915\u094d\u092f\u093e \u0915\u0930 \u0938\u0915\u0924\u0947 \u0939\u0948\u0902? \u0932\u094b\u0917 \u0924\u094b \u090f\u0915 \u092c\u094b\u0932\u0947\u0902\u0917\u0947 but \u0905\u092a\u0928\u0947 \u0915\u0930\u0947\u0902\u0917\u0947. \u0906 \u0917\u0908 \u0926\u0938, \u0906 \u0917\u0908 last ball \u092a\u0930 \u091a\u093e\u0939\u093f\u090f \u091b\u0947\u0930\u0928. \u0924\u094b \u0906\u092a \u0915\u0948\u0938\u0947 interact \u0915\u0930\u094b\u0917\u0947? \u0906\u092a\u0915\u094b \u0905\u092a\u0928\u093e reaction \u0926\u0947\u0928\u093e \u0939\u0948. \u0906\u092a \u0907\u0927\u0930 hundreds react \u0915\u0930\u094b, dollar signs react \u0915\u0930\u094b, 6 react \u0915\u0930\u094b, fours react \u0915\u0930\u094b, \u0906\u092a \u0915\u093f\u0938\u0947 support \u0915\u0930 \u0930\u0939\u0947 \u0939\u094b, \u0909\u0938\u0915\u0947 \u0938\u093e\u0925 react \u0915\u0930\u094b. MI \u0915\u094b support \u0915\u0930\u094b \u0924\u094b, MI \u0915\u0947 \u0938\u093e\u0925 react \u0915\u0930\u094b, SRH \u0915\u094b support \u0915\u0930\u094b, SRH \u0915\u0947 sticker \u0915\u0947 \u0938\u093e\u0925 react \u0915\u0930\u094b, but \u092e\u0948\u0902 \u0924\u094b Punjab kings \u0915\u094b support \u0930\u0939\u093e \u0924\u094b \u092e\u0948\u0902 Punjab singer support \u0915\u0930\u0942\u0901\u0917\u093e \u0914\u0930 \u0915\u094d\u092f\u093e sticker \u0915\u0947 \u0938\u093e\u0925 react \u0915\u0930\u094b guys? \u0915\u094c\u0928 \u0915\u094c\u0928 \u092e\u0947\u0930\u0947 \u0938\u093e\u0925 Punjab kings \u0915\u094b support \u0915\u0930 \u0930\u0939\u093e \u0939\u0948? \u0905\u092a\u0928\u0947 \u0939\u093e\u0925 \u0909\u0920\u093e\u090f \u0914\u0930 \u092c\u0924\u093e\u090f \u0915\u093f season \u0915\u094c\u0928 Punjab singer support \u0915\u0930 \u0930\u0939\u093e \u0939\u0948? \u0907\u0938 season Punjab kings \u091c\u0940\u0924 \u0930\u0939\u0940 \u0939\u0948 serpent \u0938\u093e\u0939\u092c cup \u0909\u0920\u093e \u0930\u0939\u0947 \u0939\u0948. So Punjab kings \u091c\u0940\u0924\u0947\u0917\u0940 \u0914\u0930 \u0939\u092e \u0926\u094b \u0939\u095b\u093e\u0930 \u091b\u092c\u094d\u092c\u0940\u0938 \u092e\u0947\u0902 cup \u0909\u0920\u093e \u0930\u0939\u0947 \u0939\u0948."
+}

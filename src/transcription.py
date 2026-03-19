@@ -151,12 +151,12 @@ def transcribe_audio(audio_path: str) -> dict:
         load_api_key()
 
     params = {
-        "model": "nova-2",
+        "model": "nova-3",
+        "language": "multi",
         "smart_format": "true",
         "utterances": "true",
         "punctuate": "true",
         "filler_words": "true",
-        "detect_language": "true",
     }
     headers = {
         "Authorization": f"Token {DEEPGRAM_API_KEY}",
