@@ -479,7 +479,7 @@ def _process_single_video(video_url, video_path, output_dir, no_upload):
 @click.option(
     "--video-path", type=click.Path(exists=True), help="Local path to video file"
 )
-@click.option("--output-dir", default=".", help="Directory to save reports")
+@click.option("--output-dir", default="reports", help="Directory to save reports")
 @click.option(
     "--no-upload", is_flag=True, help="Skip uploading reports to Google Drive"
 )

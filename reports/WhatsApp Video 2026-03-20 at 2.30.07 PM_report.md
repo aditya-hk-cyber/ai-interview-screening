@@ -1,0 +1,87 @@
+# AI Interview Screening Report
+
+**Date:** 2026-03-20T15:25:18.966833
+**Video:** https://drive.google.com/file/d/1EYJLyJ4L_QkgOWBX6Ci4VpED6XWV_2yE/view?usp=sharing
+
+---
+
+## Overall Score
+
+### 7.3 / 10.0  ★★★½☆
+
+**Hiring Recommendation: Yes**
+
+---
+
+## Rubric Scores
+
+### Communication Quality (Weight: 30%)
+
+**Score:** 7.0 / 10.0  ██████████████░░░░░░
+
+**Justification:** The candidate demonstrates good communication skills, but there's room for improvement. The vocabulary is adequate, and the sentence structure is generally sound. The filler word rate is 1.15%, which is excellent. The average speech confidence is 0.956, which is also excellent. However, the speaking pace is a bit fast at 206.9 WPM, potentially impacting clarity.
+
+**Evidence:**
+- "I have been the voice of it for over two years now, and I'm sharing that as well as a part of my registration."
+- "So if you can say I'm a cricketing freak."
+- "I crave numbers, and that's where I read the game."
+
+### Coherence (Weight: 30%)
+
+**Score:** 8.0 / 10.0  ████████████████░░░░
+
+**Justification:** The candidate's response is generally coherent and stays on topic. The introduction clearly states the purpose of the video. The candidate presents their experience and passion for cricket in a logical manner, highlighting their ability to identify match-defining moments. The structure is clear, with an introduction, discussion of experience, and a conclusion about their expertise.
+
+**Evidence:**
+- "Now coming to what I do, I have my own cricketing channel on Instagram and YouTube."
+- "But within the game, those match defining moments is where I think the host can play a pivotal role in."
+- "And that's where I think my expertise lies in."
+
+### Sports Knowledge (Weight: 40%)
+
+**Score:** 7.0 / 10.0  ██████████████░░░░░░
+
+**Justification:** The candidate demonstrates a good understanding of cricket, particularly regarding the IPL and match dynamics. They mention specific teams (Mumbai Indians, Royal Challengers Bangalore) and the importance of 'match-defining moments.' However, the depth of their statistical knowledge and ability to reason about complex sports scenarios could be further explored. The knowledge seems more geared towards fan engagement than in-depth analytics.
+
+**Evidence:**
+- "I obviously just favor India, and I have been supporting the IPL teams, Mumbai Indians and Royal Challenges Bangalore in the past."
+- "I crave numbers, and that's where I read the game. I read those match defining moments."
+- "Everyone already knows what should they be expecting from the match. But within the game, those match defining moments is where I think the host can play a pivotal role in."
+
+---
+
+## Strengths
+
+- Excellent speech confidence.
+- Low filler word rate.
+- Clear passion for cricket.
+- Good understanding of IPL dynamics.
+
+## Areas for Improvement
+
+- Speaking pace is slightly too fast.
+- Depth of statistical knowledge could be explored further.
+- Focus primarily on fan engagement rather than in-depth analytics.
+
+---
+
+## Transcript Statistics
+
+| Metric | Value |
+|--------|-------|
+| Duration | 75.4s |
+| Word Count | 260 |
+| Words per Minute | 206.9 |
+| Average Confidence | 0.96 |
+| Filler Word Rate | 0.011 |
+
+---
+
+## Full Transcript
+
+<details>
+<summary>Click to expand transcript</summary>
+
+Hey, guys. My name is Naman, and I am sharing this introduction video as a part of the registration process. Now coming to what I do, I have my own cricketing channel on Instagram and YouTube. It's called the Slipkordon. I have been the voice of it for over two years now, and I'm sharing that as well as a part of my registration. Now coming to which team do I favor? I obviously just favor India, and I have been supporting the IPL teams, Mumbai Indians and Royal Challenges Bangalore in the past. But now since both of them have at least one one trophy each, I think it's now time to churn into those more match defining moments rather than having any bars towards any particular team. So if you can say I'm a cricketing freak. I have I I am a freak for stats. I crave numbers, and that's where I read the game. I read those match defining moments. And that's what I think should be expected out of a watch party host, especially for high opting matches like, say, for example, it's RCB versus CSK, MI versus RCB. Everyone already knows what should they be expecting from the match. But within the game, those match defining moments is where I think the host can play a pivotal role in. And that's where I think my expertise lies in. I can ask questions like, why is this matchup pretty useful? Is this a game changing over or or even make a prediction even before it happens?
+
+</details>

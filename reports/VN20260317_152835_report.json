@@ -1,0 +1,54 @@
+{
+  "generated_at": "2026-03-19T09:53:15.305138",
+  "video_url": "https://drive.google.com/file/d/1Z4mTs61k26rncuqmrD8T3R244uV9rv34/view?usp=drivesdk",
+  "evaluation": {
+    "communication_quality": {
+      "score": 7.0,
+      "justification": "The candidate's communication is generally good, but there's room for improvement. The vocabulary is adequate, but not particularly rich. The filler word rate is 1.18%, which is excellent. The average speech confidence is 0.946, which is good but could be higher. The speaking pace is 117.2 WPM, slightly below the ideal range.",
+      "evidence": [
+        "Hi. My name is Dibash.",
+        "Uh, well, one of my special moment was when I got recruited as a guru on your platform",
+        "I'm also very comfortable being on the screen and interacting with the audience"
+      ]
+    },
+    "coherence": {
+      "score": 8.0,
+      "justification": "The candidate presents a reasonably coherent narrative. The introduction is clear, and the candidate stays on topic, primarily focusing on their experience and suitability for the watch party host role. The structure includes an introduction, a detailed example (the match commentary), and a conclusion expressing interest in the opportunity.",
+      "evidence": [
+        "I believe I could be a great watch party host because I have a strong experience in watching the game closely and understanding key aspects like stats, pitch report and match analysis.",
+        "As a Dream 11 guru, I know what it takes to break down the game and keep the audience engaged.",
+        "I would like to sincerely thank you for this opportunity."
+      ]
+    },
+    "sports_knowledge": {
+      "score": 7.0,
+      "justification": "The candidate demonstrates good knowledge of cricket, particularly IPL. The detailed commentary on the CSK vs. GT match shows familiarity with the players and the game's dynamics. However, the knowledge seems primarily focused on mainstream cricket, and there's no evidence of broader sports knowledge.",
+      "evidence": [
+        "Favorite sport is, uh, cricket, and my favorite IPL team is the Chennai Super King.",
+        "Now imagine this, the final match between CSK and the \u0917\u0941\u091c\u0930\u093e\u0924 titans and the stadium is silent. CSK needs 11 runs in the last over and \u0926\u094b\u0928\u0940 is out. All eyes on \u091c\u095c\u0947\u095b\u093e now.",
+        "As a Dream 11 guru, I know what it takes to break down the game"
+      ]
+    },
+    "strengths": [
+      "Enthusiastic about cricket and IPL",
+      "Experience as a Dream11 guru",
+      "Comfortable on screen and interacting with the audience",
+      "Low filler word rate"
+    ],
+    "weaknesses": [
+      "Speaking pace slightly below ideal range",
+      "Limited evidence of sports knowledge beyond mainstream cricket",
+      "Average speech confidence could be improved"
+    ],
+    "weighted_score": 7.3,
+    "recommendation": "Yes"
+  },
+  "transcript_stats": {
+    "duration": 216.576,
+    "word_count": 423,
+    "words_per_minute": 117.19,
+    "avg_confidence": 0.9459,
+    "filler_word_rate": 0.0118
+  },
+  "transcript": "Hi. My name is Dibash. I've recently started a YouTube channel where I upload short videos on travel, food, and lifestyle, and, uh, I've already grown to around 130 subscribers. Favorite sport is, uh, cricket, and my favorite IPL team is the Chennai Super King. Uh, well, one of my special moment was when I got recruited as a guru on your platform, and I was able to help users win in mega leagues. That experience truly defines my passion for the game. Now imagine this, the final match between CSK and the \u0917\u0941\u091c\u0930\u093e\u0924 titans and the stadium is silent. CSK needs 11 runs in the last over and \u0926\u094b\u0928\u0940 is out. All eyes on \u091c\u095c\u0947\u095b\u093e now. All eyes on \u091c\u095c\u0947\u095b\u093e now. \u092e\u094b\u0939\u093f\u0924 \u0936\u0930\u094d\u092e\u093e runs in. First ball, dog ball. And the crowd is silent. Now \u091a\u0947\u0928\u094d\u0928\u0908 needs 11 runs, five balls. Pressure is building on, pressure is building on \u091c\u0921\u0947\u091c\u093e. \u092d\u093e\u0908 \u091c\u0921\u0947\u091c\u093e \u0915\u0947 \u092a\u093e\u0938 \u0938\u093f\u0930\u094d\u092b \u0905\u092c \u091a\u093e\u0930 ball \u0939\u0948 \u0914\u0930 runs \u0939\u0948 \u0917\u094d\u092f\u093e\u0930\u0939. \u0905\u0917\u0932\u0947 \u0939\u0940 ball \u092a\u0947 \u092d\u093e\u0908 \u091a\u094c\u0915\u093e \u0932\u0917 \u0917\u092f\u093e four runs and c s k is close to victory \u0905\u092c CSK \u0915\u0947 \u092a\u093e\u0938 \u0939\u0948 \u0938\u093f\u0930\u094d\u092b \u0924\u0940\u0928 ball \u0914\u0930 runs \u091a\u093e\u0939\u093f\u090f \u0905\u092d\u0940 \u0938\u093e\u0924 \u090f\u0915 \u091b\u0915\u094d\u0915\u093e \u0914\u0930 match draw \u0905\u0917\u0932\u0947 ball \u092a\u0930 \u0926\u0947\u0916\u0924\u0947 \u0939\u0948 \u0915\u094d\u092f\u093e \u0939\u094b\u0924\u093e \u0939\u0948 guys. \u0905\u0917\u0932\u0947 \u0939\u0940 ball \u092a\u0930 again \u091a\u094c\u0915\u093e. \u091a\u094c\u0915\u093e \u0932\u0917 \u0917\u092f\u093e guys, \u091a\u094c\u0915\u093e \u0932\u0917 \u0917\u092f\u093e. \u0905\u092d\u0940 \u095b\u094d\u092f\u093e\u0926\u093e \u0926\u0942\u0930 \u0928\u0939\u0940\u0902 \u0939\u0948 victory. CSK \u0915\u0947 \u092a\u093e\u0938 \u0914\u0930 \u090f\u0915 title \u0939\u094b\u0917\u093e. \u0905\u092d\u0940 \u0938\u093f\u0930\u094d\u092b \u0924\u0940\u0928 run \u091a\u093e\u0939\u093f\u090f \u091c\u093f\u0924\u0928\u0947 \u0915\u0947 \u0932\u093f\u090f \u0914\u0930 guys \u092f\u0939 last ball \u0939\u0948. \u0924\u0940\u0928 run \u091a\u093e\u0939\u093f\u090f \u091c\u093f\u0924\u0928\u0947 \u0915\u0947 \u0932\u093f\u090f \u0924\u094b \u091a\u094c\u0915\u093e \u0924\u094b \u091a\u093e\u0939\u093f\u090f \u091a\u093e\u0939\u093f\u090f. \u091a\u094c\u0915\u093e \u0924\u094b \u091a\u093e\u0939\u093f\u090f guys \u091a\u094c\u0915\u093e \u091a\u093e\u0939\u093f\u090f. \u0905\u092d\u0940 \u0926\u0947\u0916\u0924\u0947 \u0939\u0948 \u0905\u0917\u0932\u0947 ball \u092a\u0930 \u0915\u094d\u092f\u093e \u0939\u094b\u0924\u093e \u0939\u0948? Last ball \u0939\u0948 \u092f\u0939 \u0914\u0930 guys \u091c\u0921\u093c\u0947 \u091c\u093e\u0928\u0947 \u0915\u0930 \u0926\u093f\u0916\u093e\u092f\u093e. \u091c\u0921\u093c\u0947 \u091c\u093e\u0928\u0947 \u0915\u0930 \u0926\u093f\u0916\u093e\u092f\u093e c s k won the match. Guys, c s k \u091c\u0940\u0924 \u091a\u0941\u0915\u093e \u0939\u0948 \u0914\u0930 \u092f\u0939 CSK \u0915\u0940 \u092c\u0939\u0941\u0924 \u092c\u095c\u0940 \u091c\u0940\u0924 \u0939\u0948. History is ridden. CSK again has \u090f\u0915 cup \u0914\u0930 \u090f\u0915 title. I believe I could be a great watch party host because I have a strong experience in watching the game closely and understanding key aspects like stats, pitch report and match analysis. As a Dream 11 \u0917\u0941\u0930\u0941, I know what it takes to break down the game and keep the audience engaged. I'm also very comfortable being on the screen and interacting with the audience, which will help me create a fun, energetic, and engaging environment during the life matches. I would like to sincerely thank you for this opportunity. I really look forward to an amazing IPL season ahead. Thank you."
+}

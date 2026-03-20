@@ -1,0 +1,51 @@
+{
+  "generated_at": "2026-03-19T09:55:29.331122",
+  "video_url": "https://drive.google.com/drive/folders/1UM-zgsQ2-xhg7KAJvCOr9IwuVF-Nm0Hp",
+  "evaluation": {
+    "communication_quality": {
+      "score": 7.0,
+      "justification": "The candidate's speech has a good average confidence and a reasonable speaking pace. However, the vocabulary is not particularly rich, and there are several filler words used, although the filler word rate is acceptable. The candidate also mixes Hindi and English, which may affect clarity for some listeners.",
+      "evidence": [
+        "Hi, team Dream Eleven. So this is Shivansh and I'm here applying for the party host.",
+        "My world cricket \u092d\u0940 \u0926\u0947\u0916\u0924\u093e \u0939\u0942\u0902.",
+        "\u0924\u094b I'm a very passionate fan of cricket."
+      ]
+    },
+    "coherence": {
+      "score": 6.0,
+      "justification": "The response has a basic structure, but the flow of ideas could be improved. The candidate jumps between expressing their passion for cricket, describing their social media presence, and suggesting ideas for hyping up the team. The transitions are not always smooth.",
+      "evidence": [
+        "I make the reels, I make reels on Instagram and YouTube. My handle is cricket underscore chalkboard. I also have a YouTube channel named cricket chalkboard. \u0924\u094b I'm a very passionate fan of cricket.",
+        "How can I hype the team? I can hype the team environment or I can hype the crowd like I can be the MC if you want. I can host the games if you want."
+      ]
+    },
+    "sports_knowledge": {
+      "score": 7.0,
+      "justification": "The candidate demonstrates knowledge of cricket, mentioning specific teams (Chennai Super Kings, Indian team), tournaments (IPL, T20 World Cup), and a favorite player (MS Dhoni). However, the depth of knowledge is not extensively explored. The candidate expresses passion for the sport, but doesn't showcase in-depth understanding of stats or strategic analysis.",
+      "evidence": [
+        "So my favorite sport is cricket, and my favorite player is MS Dhoni. And my favorite team is Chennai Super Kings and IPL, and I follow Indian team very much.",
+        "currently, \u092e\u0948\u0902\u0928\u0947 \u092a\u0942\u0930\u093e t twenty World Cup \u0926\u0947\u0916\u093e, \u090f\u0915 \u090f\u0915 match \u0926\u0947\u0916\u093e."
+      ]
+    },
+    "strengths": [
+      "Enthusiastic and passionate about cricket",
+      "Has ideas for engaging a crowd",
+      "Active on social media related to cricket"
+    ],
+    "weaknesses": [
+      "Communication could be more polished (fewer filler words, richer vocabulary)",
+      "Response lacks a clear, structured flow",
+      "Depth of sports knowledge not fully demonstrated"
+    ],
+    "weighted_score": 6.7,
+    "recommendation": "Yes"
+  },
+  "transcript_stats": {
+    "duration": 89.856,
+    "word_count": 262,
+    "words_per_minute": 174.95,
+    "avg_confidence": 0.9495,
+    "filler_word_rate": 0.0229
+  },
+  "transcript": "Hi, team Dream Eleven. So this is Shivansh and I'm here applying for the party host. So my favorite sport is cricket, and my favorite player is MS Dhoni. And my favorite team is Chennai Super Kings and IPL, and I follow Indian team very much. Plus, what can I I can say while applying? I follow world cricket also. My world cricket \u092d\u0940 \u0926\u0947\u0916\u0924\u093e \u0939\u0942\u0902. \u092e\u0948\u0902 currently, \u092e\u0948\u0902\u0928\u0947 \u092a\u0942\u0930\u093e t twenty World Cup \u0926\u0947\u0916\u093e, \u090f\u0915 \u090f\u0915 match \u0926\u0947\u0916\u093e. I make the reels, I make reels on Instagram and YouTube. My handle is cricket underscore chalkboard. I also have a YouTube channel named cricket chalkboard. \u0924\u094b I'm a very passionate fan of cricket. \u092c\u0939\u0941\u0924 passionate \u0939\u0942\u0902 cricket \u0915\u094b \u0932\u0947\u0915\u0930. How can I hype the team? I can hype the team environment or I can hype the crowd like I can be the MC if you want. I can host the games if you want. I have many ideas. We can do a rapid fire round or we can put two members alongside and we can have a competition that who knows the team players better. \u092c\u0939\u0941\u0924 \u0938\u093e\u0930\u0947 \u0910\u0938\u0947 ideas \u0939\u0948\u0902. I am a very enthusiastic person when it comes to talking to people about sports. \u092c\u0939\u0941\u0924 \u092c\u093e\u0924\u0947\u0902 \u0915\u0930\u0928\u093e \u092e\u0941\u091d\u0947 \u092a\u0938\u0902\u0926 \u0939\u0948. \u092e\u0941\u091d\u0947 stats \u0915\u0947 \u0938\u093e\u0925 competition \u0915\u0930\u0928\u093e \u092c\u0939\u0941\u0924 \u092a\u0938\u0902\u0926 \u0939\u0948 \u0915\u093f let's see how much you know this player better or I know this player better. So this is all that I can do. I can be a very good party host. So please do consider my application. Thank you so much."
+}

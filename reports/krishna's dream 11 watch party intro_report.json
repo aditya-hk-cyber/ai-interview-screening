@@ -1,0 +1,54 @@
+{
+  "generated_at": "2026-03-20T15:24:39.147905",
+  "video_url": "https://drive.google.com/file/d/1SiIo5Uczfbo-OXCmHyQCamPAoRrBr1Jh/view?usp=drivesdk",
+  "evaluation": {
+    "communication_quality": {
+      "score": 7.0,
+      "justification": "The candidate's speaking pace is slightly fast (159.5 WPM), but within an acceptable range. The filler word rate is excellent (1.17%). The average speech confidence is good (0.944), but could be higher. Vocabulary is adequate but not particularly rich. Sentence structure is simple.",
+      "evidence": [
+        "I've twelve thirty last year, and I am an corporate employee.",
+        "I'm basically a software engineer, but statistic nerds.",
+        "So even whenever I talk to the global clients, they do admire the cricket passion that India has a lot."
+      ]
+    },
+    "coherence": {
+      "score": 6.0,
+      "justification": "The response is somewhat coherent, but lacks a strong structure. The candidate introduces themselves and their interest in cricket, but the flow of ideas could be improved. There isn't a clear conclusion.",
+      "evidence": [
+        "Hi. This is Krishna.",
+        "I just don't follow cricket, but I also play cricket.",
+        "But overall, I'm a big cricket fan."
+      ]
+    },
+    "sports_knowledge": {
+      "score": 7.0,
+      "justification": "The candidate demonstrates good knowledge of cricket, mentioning the IPL, domestic players, and specific players like \u0930\u093f\u092f\u093e\u0928 \u092a\u0930\u093e\u0917, \u0915\u0941\u0932\u0926\u0940\u092a \u0938\u0948\u0928, and \u0927\u094d\u0930\u0941\u0935 \u091c\u0941\u0930\u0948\u0932. They also show awareness of the game's global appeal. However, the depth of analysis is limited.",
+      "evidence": [
+        "I have been following IPL passionately.",
+        "I do follow domestic players. I have been following \u0930\u093f\u092f\u093e\u0928 \u092a\u0930\u093e\u0917 lately because he I see him a potential middle middle batsman going forward.",
+        "Then players like \u0915\u0941\u0932\u0926\u0940\u092a \u0938\u0948\u0928 who is also emerging pacer. Then also \u0927\u094d\u0930\u0941\u0935 \u091c\u0941\u0930\u0948\u0932."
+      ]
+    },
+    "strengths": [
+      "Passion for cricket",
+      "Knowledge of IPL and domestic players",
+      "Good speaking pace and low filler word rate"
+    ],
+    "weaknesses": [
+      "Limited vocabulary richness",
+      "Lack of clear structure in response",
+      "Average speech confidence",
+      "Limited depth of sports analysis"
+    ],
+    "weighted_score": 6.7,
+    "recommendation": "Yes"
+  },
+  "transcript_stats": {
+    "duration": 64.332,
+    "word_count": 171,
+    "words_per_minute": 159.49,
+    "avg_confidence": 0.9442,
+    "filler_word_rate": 0.0117
+  },
+  "transcript": "Hi. This is Krishna. I've twelve thirty last year, and I am an corporate employee. I'm basically a software engineer, but statistic nerds. I do fall in cricket and world cricket overall a lot. I have been following IPL passionately. I have been I mean, since my early school days, I would say the time when Ashikhar Dhawan used to play underline team cricket. Since then, I'm I'm following that game, and this game has given India a lot a lot of global recognition. So even whenever I talk to the global clients, they do admire the cricket passion that India has a lot. I just don't follow cricket, but I also play cricket. I also play club cricket, and I also have good records there. But overall, I'm a big cricket fan. I do follow domestic players. I have been following \u0930\u093f\u092f\u093e\u0928 \u092a\u0930\u093e\u0917 lately because he I see him a potential middle middle batsman going forward. Then players like \u0915\u0941\u0932\u0926\u0940\u092a \u0938\u0948\u0928 who is also emerging pacer. Then also \u0927\u094d\u0930\u0941\u0935 \u091c\u0941\u0930\u0948\u0932."
+}

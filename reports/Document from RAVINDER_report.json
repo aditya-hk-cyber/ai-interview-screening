@@ -1,0 +1,54 @@
+{
+  "generated_at": "2026-03-20T13:21:25.172186",
+  "video_url": "https://drive.google.com/file/d/1Gv06TzhcVKKdQ7e3BdfL__-HSyIUtONA/view?usp=drivesdk",
+  "evaluation": {
+    "communication_quality": {
+      "score": 7.0,
+      "justification": "The candidate's speech is clear and confident, as indicated by the high average speech confidence (0.957). The absence of filler words is also a positive. However, the speaking pace is a bit slow (77.2 WPM), and the vocabulary and sentence structure are relatively simple. This limits the overall communication quality.",
+      "evidence": [
+        "\u0928\u092e\u0938\u094d\u0915\u093e\u0930 \u091c\u0940. \u092e\u0947\u0930\u093e \u0928\u093e\u092e \u0930\u0935\u0940\u0902\u0926\u094d\u0930 \u0939\u0948.",
+        "\u092e\u0948\u0902 \u090f\u0915 social media influencer \u0939\u0942\u0902.",
+        "\u092e\u0947\u0930\u093e favorite game cricket \u0939\u0948."
+      ]
+    },
+    "coherence": {
+      "score": 7.0,
+      "justification": "The candidate stays on topic, introducing himself and sharing his interest in cricket. The response has a basic structure, but it lacks depth and a clear conclusion. The flow of information is somewhat disjointed.",
+      "evidence": [
+        "\u092e\u0948\u0902 \u0939\u0930\u093f\u092f\u093e\u0923\u0940 \u0938\u0947 belong \u0915\u0930\u0924\u093e \u0939\u0942\u0902.",
+        "\u092e\u0948\u0902 \u0958\u0930\u0940\u092c\u0928 \u092c\u0940\u0938 \u0938\u093e\u0932 \u0938\u0947 cricket \u0916\u0947\u0932\u0924\u093e \u0914\u0930 \u0926\u0947\u0916\u0924\u093e \u0906 \u0930\u0939\u093e \u0939\u0942\u0902.",
+        "IPL \u092e\u0947\u0902 RCB team \u092e\u0947\u0930\u0940 \u0938\u092c\u0938\u0947 favorite team \u0939\u0948."
+      ]
+    },
+    "sports_knowledge": {
+      "score": 6.0,
+      "justification": "The candidate demonstrates basic knowledge of cricket, mentioning IPL, RCB, and Virat Kohli. However, the knowledge is superficial and lacks any analytical depth or insight. There's no discussion of rules, stats, or trends, indicating a limited understanding beyond casual fandom.",
+      "evidence": [
+        "\u0938\u092c\u0938\u0947 \u095b\u094d\u092f\u093e\u0926\u093e \u092e\u0941\u091d\u0947 IPL IPL \u0926\u0947\u0916\u0928\u093e \u092a\u0938\u0902\u0926 \u0939\u0948.",
+        "IPL \u092e\u0947\u0902 RCB team \u092e\u0947\u0930\u0940 \u0938\u092c\u0938\u0947 favorite team \u0939\u0948. \u0915\u094d\u092f\u094b\u0902\u0915\u093f \u0935\u093f\u0930\u093e\u091f \u0915\u094b\u0939\u0932\u0940 \u0909\u0938\u092e\u0947\u0902 main player \u0939\u0948.",
+        "\u092e\u0947\u0930\u0947 favorite players \u0935\u093f\u0930\u093e\u091f \u0915\u094b\u0939\u0932\u0940 \u0939\u0948\u0902."
+      ]
+    },
+    "strengths": [
+      "Clear and confident speech",
+      "No filler words",
+      "Basic cricket knowledge"
+    ],
+    "weaknesses": [
+      "Slow speaking pace",
+      "Limited vocabulary and sentence variety",
+      "Superficial sports knowledge",
+      "Lacks analytical depth"
+    ],
+    "weighted_score": 6.6,
+    "recommendation": "Yes"
+  },
+  "transcript_stats": {
+    "duration": 63.756,
+    "word_count": 82,
+    "words_per_minute": 77.17,
+    "avg_confidence": 0.9569,
+    "filler_word_rate": 0.0
+  },
+  "transcript": "\u0928\u092e\u0938\u094d\u0915\u093e\u0930 \u091c\u0940. \u092e\u0947\u0930\u093e \u0928\u093e\u092e \u0930\u0935\u0940\u0902\u0926\u094d\u0930 \u0939\u0948. \u092e\u0948\u0902 \u0939\u0930\u093f\u092f\u093e\u0923\u0940 \u0938\u0947 belong \u0915\u0930\u0924\u093e \u0939\u0942\u0902. \u092e\u0948\u0902 \u090f\u0915 social media influencer \u0939\u0942\u0902. \u092e\u0947\u0930\u093e favorite game cricket \u0939\u0948. \u092e\u0941\u091d\u0947 cricket \u0916\u0947\u0932\u0928\u093e \u0914\u0930 \u0926\u0947\u0916\u0928\u093e \u092c\u0939\u0941\u0924 \u092a\u0938\u0902\u0926 \u0939\u0948. \u092e\u0948\u0902 \u090f\u0915 bowling lounge \u0939\u0942\u0902. \u092e\u0947\u0930\u0940 \u0909\u092e\u094d\u0930\u0924\u093f \u0924\u093f\u0938\u093e\u0932 \u0939\u0948. \u092e\u0948\u0902 \u0958\u0930\u0940\u092c\u0928 \u092c\u0940\u0938 \u0938\u093e\u0932 \u0938\u0947 cricket \u0916\u0947\u0932\u0924\u093e \u0914\u0930 \u0926\u0947\u0916\u0924\u093e \u0906 \u0930\u0939\u093e \u0939\u0942\u0902. \u0938\u092c\u0938\u0947 \u095b\u094d\u092f\u093e\u0926\u093e \u092e\u0941\u091d\u0947 IPL IPL \u0926\u0947\u0916\u0928\u093e \u092a\u0938\u0902\u0926 \u0939\u0948. IPL \u092e\u0947\u0902 RCB team \u092e\u0947\u0930\u0940 \u0938\u092c\u0938\u0947 favorite team \u0939\u0948. \u0915\u094d\u092f\u094b\u0902\u0915\u093f \u0935\u093f\u0930\u093e\u091f \u0915\u094b\u0939\u0932\u0940 \u0909\u0938\u092e\u0947\u0902 main player \u0939\u0948. \u092e\u0947\u0930\u0947 favorite players \u0935\u093f\u0930\u093e\u091f \u0915\u094b\u0939\u0932\u0940 \u0939\u0948\u0902."
+}

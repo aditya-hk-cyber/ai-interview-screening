@@ -1,0 +1,53 @@
+{
+  "generated_at": "2026-03-19T09:50:55.879397",
+  "video_url": "https://drive.google.com/file/d/1sP5lw4J5raoO1WAnBfJf1VHjugqZYy5n/view?usp=drivesdk",
+  "evaluation": {
+    "communication_quality": {
+      "score": 6.0,
+      "justification": "The candidate's communication is somewhat lacking. The speech pace is a bit too fast at 180 WPM. The filler word rate is 4.39%, which is borderline acceptable but could be improved. The average speech confidence is good at 0.934. Vocabulary is fairly basic.",
+      "evidence": [
+        "Uh, look.",
+        "Uh, we have probably the most successful franchise in history.",
+        "So \u091a\u0947\u0928\u094d\u0928\u0908 super kings essentially I mean is known for these iconic comebacks great fandom great fan following obviously talk about the MS factor he's gonna be there and you know the best thing is I am a \u0924\u092e\u093f\u0932ian I speak the local language I understand the emotions so I think you have given an opportunity I can really really you know I can help people get along and and that's that's the key."
+      ]
+    },
+    "coherence": {
+      "score": 6.0,
+      "justification": "The response lacks a clear structure. The candidate jumps between topics related to the Chennai Super Kings without a logical flow. There's a beginning that introduces himself as a fan, a middle that touches on team history and a specific moment, and an end that vaguely relates his language skills to the job, but it's not well-organized.",
+      "evidence": [
+        "Five time champions, our greatest moment was probably winning the IPL after the ban coming straight away and demonstrating why we were a great team.",
+        "And then couple of years ago at the \u092e\u094b\u0926\u0940 Stadium whatever \u0930\u0935\u093f\u0902\u0926\u094d\u0930\u093e \u091a\u093e\u0930\u093f\u091c\u093e did was quite spectacular.",
+        "I am a \u0924\u092e\u093f\u0932ian I speak the local language I understand the emotions so I think you have given an opportunity I can really really you know I can help people get along and and that's that's the key."
+      ]
+    },
+    "sports_knowledge": {
+      "score": 7.0,
+      "justification": "The candidate demonstrates some knowledge of the Chennai Super Kings, mentioning their success, a specific victory, and a player's performance. However, the knowledge is somewhat superficial and lacks depth. The candidate does not demonstrate knowledge of other sports.",
+      "evidence": [
+        "We have probably the most successful franchise in history.",
+        "Five time champions, our greatest moment was probably winning the IPL after the ban coming straight away and demonstrating why we were a great team.",
+        "And then couple of years ago at the \u092e\u094b\u0926\u0940 Stadium whatever \u0930\u0935\u093f\u0902\u0926\u094d\u0930\u093e \u091a\u093e\u0930\u093f\u091c\u093e did was quite spectacular."
+      ]
+    },
+    "strengths": [
+      "Enthusiasm for the team",
+      "Local language skills"
+    ],
+    "weaknesses": [
+      "Fast speaking pace",
+      "High filler word usage",
+      "Lack of structure",
+      "Superficial sports knowledge"
+    ],
+    "weighted_score": 6.4,
+    "recommendation": "Maybe"
+  },
+  "transcript_stats": {
+    "duration": 68.256,
+    "word_count": 205,
+    "words_per_minute": 180.2,
+    "avg_confidence": 0.9342,
+    "filler_word_rate": 0.0439
+  },
+  "transcript": "Hi, guys. This is Vivek. I'm from Bombay, a diehard Chinese Super Kings fan from the very beginning. Uh, look. We have probably the most successful franchise in history. Uh, we didn't have a great season last year. I'm so looking forward to the upcoming season. Five time champions, our greatest moment was probably winning the IPL after the ban coming straight away and demonstrating why we were a great team. And then couple of years ago at the \u092e\u094b\u0926\u0940 Stadium whatever \u0930\u0935\u093f\u0902\u0926\u094d\u0930\u093e \u091a\u093e\u0930\u093f\u091c\u093e did was quite spectacular. So \u091a\u0947\u0928\u094d\u0928\u0908 super kings essentially I mean is known for these iconic comebacks great fandom great fan following obviously talk about the MS factor he's gonna be there and you know the best thing is I am a \u0924\u092e\u093f\u0932ian I speak the local language I understand the emotions so I think you have given an opportunity I can really really you know I can help people get along and and that's that's the key. You know? Uh, the the whole vibe, the atmosphere. I think I can hold the whole I can hold the team, uh, the the crowd together, and, uh, yeah. So let's see how it goes. I'm really looking forward to this. Thank you."
+}
